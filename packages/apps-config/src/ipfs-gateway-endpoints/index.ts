@@ -19,6 +19,10 @@ export function createAuthIpfsEndpoints (t: TFunction): AuthIpfsEndpoint[] {
     // },
     // for prod
     {
+      location: t('hgmalls'),
+      text: t('DCF'),
+      value: 'http://ipfs.hgmalls.com'
+    },{
       location: t('Singapore'),
       text: t('DCF'),
       value: 'https://crustipfs.xyz'

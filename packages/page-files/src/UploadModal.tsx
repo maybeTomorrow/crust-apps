@@ -46,7 +46,7 @@ function UploadModal (p: Props): React.ReactElement<Props> {
   const [password, setPassword] = useState('');
   const [isBusy, setBusy] = useState(false);
   const fileSizeError = useMemo(() => {
-    const MAX = 100 * 1024 * 1024;
+    const MAX = 1000 * 1024 * 1024;
 
     if (file.file) {
       return file.file.size > MAX;
