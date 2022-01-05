@@ -9,6 +9,7 @@ import styled from 'styled-components';
 import { Table } from '@polkadot/react-components';
 import { useTranslation } from '@polkadot/apps/translate';
 import VersionInfo, { SworkerVersion } from './VersionInfo';
+import Banner from '@polkadot/app-accounts/Accounts/Banner';
 
 interface Props {
   className?: string;
@@ -27,7 +28,7 @@ function Summary({ className, current, summaryInfo, isLoading }: Props): React.R
 
   
   const versionHeaderRef = useRef([
-    [t('Current availabe sWorker'), 'start'],
+    [t('Current available sWorker'), 'start'],
     [t('Proportion')],
     [t('Release')],
     [t('Due date')],
@@ -35,9 +36,12 @@ function Summary({ className, current, summaryInfo, isLoading }: Props): React.R
   ]);
 
   return (<div className={className}>
+    <Banner type='warning'>
+      <p>{t<string>('Please be sure to follow the steps in the upgrade guide to upgrade sWorker')}</p>
+    </Banner>
     <Table
         header={versionHeaderRef.current}
-        empty={ !isLoading && t<string>('No funds availabe sWorker yet.')}
+        empty={ !isLoading && t<string>('No funds available sWorker yet.')}
     >
         {summaryInfo && summaryInfo?.map((sv): React.ReactNode => (
             <VersionInfo
