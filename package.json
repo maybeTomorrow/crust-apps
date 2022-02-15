@@ -12,13 +12,13 @@
     "packages/*"
   ],
   "resolutions": {
-    "@polkadot/api": "^4.2.2-4",
-    "@polkadot/api-contract": "^4.2.2-4",
+    "@polkadot/api": "4.2.2-4",
+    "@polkadot/api-contract": "4.2.2-4",
     "@polkadot/hw-ledger": "^6.0.5",
     "@polkadot/keyring": "^6.0.5",
     "@polkadot/networks": "^6.0.5",
     "@polkadot/phishing": "^0.6.36",
-    "@polkadot/types": "^4.2.2-4",
+    "@polkadot/types": "4.2.2-4",
     "@polkadot/util": "^6.0.5",
     "@polkadot/util-crypto": "^6.0.5",
     "@polkadot/wasm-crypto": "^4.0.2",
@@ -93,17 +93,21 @@
     "react-dom": "^17.0.1",
     "react-is": "^17.0.1",
     "source-map-explorer": "^2.5.2",
+    "string_decoder": "^1.3.0",
     "style-loader": "^2.0.0",
     "styled-components": "^5.2.1",
     "stylelint": "^13.12.0",
     "stylelint-config-recommended": "^4.0.0",
     "stylelint-config-styled-components": "^0.1.1",
     "webpack": "^5.25.1",
-    "webpack-cli": "^4.5.0"
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^4.5.0"
   },
   "dependencies": {
+    "@polkadot/api": "^4.2.2-4",
     "@types/lodash": "^4.14.168",
     "dayjs": "^1.10.4",
-    "reactjs-popup": "^2.0.4"
+    "reactjs-popup": "^2.0.4",
+    "url": "^0.11.0"
   }
 }
