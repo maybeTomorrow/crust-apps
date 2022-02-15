@@ -107,7 +107,8 @@ function CurrentList ({ favorites, hasQueries, isIntentions, stakingOverview, ta
     if (stakingOverview && targets) {
       setValidatorCount(stakingOverview.validatorCount.toNumber());
       setTotalEffectiveStake(targets.totalStaked as BN);
-      api.query.staking.erasStakingPayout(stakingOverview.activeEra.toNumber() - 1).then((res) => {
+      const tn=stakingOverview.activeEra.toNumber()
+      api.query.staking.erasStakingPayout(tn==0?0: tn - 1 ).then((res) => {
         const erasStakingPayout = JSON.parse(JSON.stringify(res));
         const totalPayout = Number(erasStakingPayout) / 0.8;
 

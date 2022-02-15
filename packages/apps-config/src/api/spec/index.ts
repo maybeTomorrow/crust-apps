@@ -61,6 +61,7 @@ import unique from './unique';
 import vln from './vln';
 import zenlink from './zenlink';
 import zero from './zero';
+import hws from './hws';
 
 // NOTE: The mapping is done from specName in state.getRuntimeVersion
 const spec: Record<string, OverrideBundleDefinition> = {
@@ -81,6 +82,7 @@ const spec: Record<string, OverrideBundleDefinition> = {
   clover,
   'clover-rococo': cloverRococo,
   crust,
+  hws,
   'crust-parachain': crust,
   'cumulus-test-parachain': testPara,
   'darwinia-parachain': darwiniaParachain,
