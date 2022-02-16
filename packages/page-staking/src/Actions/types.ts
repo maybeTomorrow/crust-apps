@@ -24,4 +24,3 @@ export interface Slash {
 }
 
 export type DestinationType = 'Staked' | 'Stash' | 'Controller' | 'Account';
-@polkadot/api
